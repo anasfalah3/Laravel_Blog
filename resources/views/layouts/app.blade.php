@@ -28,9 +28,16 @@
             @endif
 
             <!-- Page Content -->
-            <main>
+            {{-- <main>
                 {{ $slot }}
-            </main>
+            </main> --}}
+
+            <div>
+                @yield('content')
+            </div>
+            <div>
+                @include('layouts.footer')
+            </div>
         </div>
     </body>
 </html>
